@@ -4,7 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
  
-
   enum :current_status, Student: "Student", Teacher: "Teacher",
                         City_manager: "City_manager", Educator: "Educator",
                         Develop: "Develop", Program_manager: "Program_manager",
@@ -15,5 +14,7 @@ class User < ApplicationRecord
   def set_default_current_status
     self.current_status ||= :Student
   end
+
+
 
 end
