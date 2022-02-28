@@ -37,13 +37,13 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.string "full_name"
       t.string "matricule"
       t.string "gender"
-      t.string "contact", default: "", null: false
-      t.string "status"
+      #t.string "status"
       t.string "payment"
       t.string "slug"
       t.string "avatar_profil"
       t.string "nb_class_3e"
       t.string "nb_class_tle"
+      t.string "contact", default: "", null: false
       t.string "contact_money"
       t.string "opt_money"
       t.uuid "city_id"
