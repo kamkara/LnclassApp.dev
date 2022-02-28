@@ -42,10 +42,10 @@ gem "redis", "~> 4.0"
 
 ########### PROJETS GEMS #####################
 gem 'friendly_id', '~> 5.4', '>= 5.4.2'
-
-
-
-
+gem 'devise', '~> 4.8', '>= 4.8.1'
+#gem 'devise_invitable', '~> 2.0', '>= 2.0.6'
+#gem 'devise-i18n', '~> 1.10', '>= 1.10.2'
+gem 'simple_form', '~> 5.1'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
