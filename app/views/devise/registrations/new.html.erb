@@ -5,24 +5,31 @@
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"border rounded-md p-2", placeholder:"email ..."  %>
   </div>
+<div class="field">
+<%= f.label :contact, 'Nom ...' %> <br />
+<%= f.text_field :first_name,  class:"border rounded-md p-2 my-2", placeholder:"Nom ..." %>
+<%= f.label :last_name, 'Prénom ...' %> <br />
+<%= f.text_field :last_name,  class:"border rounded-md p-2 my-2", placeholder:"Prénom ..." %>
+<%= f.label :matricule, 'N° matricule ...' %> <br />
+<%= f.text_field :matricule,  class:"border rounded-md p-2 my-2", placeholder:"Matricule ..." %>
+<%= f.label :contact, 'N° whatsapp' %> <br />
+<%= f.text_field :contact,  class:"border rounded-md p-2 my-2", placeholder:"Contact whatsapp ..." %>
+<%= f.label :contact, 'N° whatsapp' %> <br />
+<%= f.text_field :contact,  class:"border rounded-md p-2 my-2", placeholder:"Contact whatsapp ..." %>
+</div>
+<%= f.hidden_field :current_status, value:"Teacher" %>
 
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password, autocomplete: "new-password", class:"border rounded-md p-2", placeholder:"password ..." %>
   </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class:"btn btn-primary p-2 border rounded-md mt-2" %>
   </div>
 <% end %>
 

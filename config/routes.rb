@@ -1,10 +1,17 @@
 Rails.application.routes.draw do
-  get 'home/index'
-  get 'home/team'
-  devise_for :users
-  root "welcome#index"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  
+  root to:"welcome#index"
+  get "feeds", to:'home#index'
+   get "teams", to:'home#team'
+  
+       ######### USER DATA #########
+            devise_scope :user do
+    get 'profile/edit'    => 'devise/registrations#edit',   :as => :edit_user_registration
+    get 'profile/cancel'  => 'devise/registrations#cancel', :as => :cancel_user_registration
+  end
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  devise_for :users, path: '', path_names: { sign_in: 'Connecter', 
+                sign_out: 'logout', password: 'secret', confirmation: 'verification',
+                 unlock: 'unblock', registration: '', sign_up: 'student' }
+  
 end

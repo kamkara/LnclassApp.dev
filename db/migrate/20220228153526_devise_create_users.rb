@@ -37,7 +37,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.string "full_name"
       t.string "matricule"
       t.string "gender"
-      #t.string "status"
       t.string "payment"
       t.string "slug"
       t.string "avatar_profil"
@@ -46,10 +45,10 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.string "contact", default: "", null: false
       t.string "contact_money"
       t.string "opt_money"
-      t.uuid "city_id"
-      t.uuid "level_id"
-      t.uuid "material_id"
-      t.uuid "school_id"
+      t.string "city_name"
+      t.string "level_name"
+      t.string "material_name"
+      t.string "school_name"
       t.timestamps null: false
     end
 

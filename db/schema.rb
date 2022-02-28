@@ -54,10 +54,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_02_28_161144) do
     t.string "contact", default: "", null: false
     t.string "contact_money"
     t.string "opt_money"
-    t.uuid "city_id"
-    t.uuid "level_id"
-    t.uuid "material_id"
-    t.uuid "school_id"
+    t.string "city_name"
+    t.string "level_name"
+    t.string "material_name"
+    t.string "school_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.enum "current_status", default: "Student", null: false, enum_type: "status"
