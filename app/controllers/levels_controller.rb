@@ -27,7 +27,7 @@ class LevelsController < ApplicationController
 
     respond_to do |format|
       if @level.save
-        format.html { redirect_to levels_path,, notice: "Level was successfully created." }
+        format.html { redirect_to levels_path, notice: "Level was successfully created." }
         format.json { render :show, status: :created, location: @level }
       else
         format.html { render :new, status: :unprocessable_entity }
