@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :materials
+  resources :levels
   
   root to:"welcome#index"
   get "feeds", to:'home#index'
