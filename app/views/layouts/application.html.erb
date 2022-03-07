@@ -20,14 +20,10 @@
     <%= render "shared/styles/header" %>
   </head>
 
-  <body>
+  <body style="padding-top: 4.5rem;">
     <!-- Add Flash -->
-  <%= render 'shared/flash/notices' %>
-  
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
-    </main>
-
+    <%= render 'shared/flash/notices' %>
+    <%= yield %>
     <!--FOOTER -->
     <%= render "shared/styles/footer" %>
   </body>

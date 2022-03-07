@@ -27,6 +27,11 @@ gem "stimulus-rails"
 # Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
 gem "tailwindcss-rails"
 
+#Bootstrap
+gem 'bootstrap', '~> 5.1', '>= 5.1.3'
+gem 'jquery-rails'
+gem "bootstrap_form", "~> 5.0"
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
@@ -45,7 +50,7 @@ gem 'friendly_id', '~> 5.4', '>= 5.4.2'
 gem 'devise', '~> 4.8', '>= 4.8.1'
 #gem 'devise_invitable', '~> 2.0', '>= 2.0.6'
 #gem 'devise-i18n', '~> 1.10', '>= 1.10.2'
-gem 'simple_form', '~> 5.1'
+#gem 'simple_form', '~> 5.1'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
@@ -54,7 +59,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+ gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
